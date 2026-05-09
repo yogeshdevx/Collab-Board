@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "name": "Demo Manager",
+      "email": "demo@example.com",
+      "password": "6f24f52a9d239cdc2a8117ba3250145b:53f906252579c5e1dd4b2a45f9a553113afbbd5300cf3fdb6311407bd3be8a10",
+      "createdAt": "2026-05-09T06:28:14.243Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "4fd2bd1f-f7a7-4741-a470-c498a678d273",
+      "name": "Product Launch",
+      "description": "Coordinate work across design, development, and release.",
+      "ownerId": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "memberIds": [
+        "aad7835e-23d4-4d6f-bf11-3b10d6da7211"
+      ],
+      "createdAt": "2026-05-09T06:28:14.243Z"
+    }
+  ],
+  "boards": [
+    {
+      "id": "164df526-acba-4be9-b65d-165da417303c",
+      "projectId": "4fd2bd1f-f7a7-4741-a470-c498a678d273",
+      "name": "Launch Board",
+      "columns": [
+        "Backlog",
+        "In Progress",
+        "Review",
+        "Done"
+      ],
+      "createdAt": "2026-05-09T06:28:14.243Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "20896c47-13e9-4684-8545-240e4cd4dc5b",
+      "projectId": "4fd2bd1f-f7a7-4741-a470-c498a678d273",
+      "boardId": "164df526-acba-4be9-b65d-165da417303c",
+      "title": "Draft roadmap",
+      "description": "Add details, assign ownership, and track progress from here.",
+      "status": "Done",
+      "priority": "High",
+      "assigneeId": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "dueDate": "",
+      "createdBy": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "createdAt": "2026-05-09T06:28:14.286Z",
+      "updatedAt": "2026-05-09T06:29:50.763Z"
+    },
+    {
+      "id": "95451df8-f965-4720-aaaf-0073372a1a9c",
+      "projectId": "4fd2bd1f-f7a7-4741-a470-c498a678d273",
+      "boardId": "164df526-acba-4be9-b65d-165da417303c",
+      "title": "Create landing page copy",
+      "description": "Add details, assign ownership, and track progress from here.",
+      "status": "Done",
+      "priority": "Medium",
+      "assigneeId": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "dueDate": "",
+      "createdBy": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "createdAt": "2026-05-09T06:28:14.286Z",
+      "updatedAt": "2026-05-09T06:29:56.970Z"
+    },
+    {
+      "id": "c260c76f-1cfd-4930-a60c-419b216c0c1b",
+      "projectId": "4fd2bd1f-f7a7-4741-a470-c498a678d273",
+      "boardId": "164df526-acba-4be9-b65d-165da417303c",
+      "title": "QA onboarding flow",
+      "description": "Add details, assign ownership, and track progress from here.",
+      "status": "Done",
+      "priority": "High",
+      "assigneeId": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "dueDate": "",
+      "createdBy": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "createdAt": "2026-05-09T06:28:14.286Z",
+      "updatedAt": "2026-05-09T06:30:09.286Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "345b77ef-6b79-46f5-8e3f-c85aee1f80ab",
+      "taskId": "20896c47-13e9-4684-8545-240e4cd4dc5b",
+      "projectId": "4fd2bd1f-f7a7-4741-a470-c498a678d273",
+      "userId": "aad7835e-23d4-4d6f-bf11-3b10d6da7211",
+      "text": "hello",
+      "createdAt": "2026-05-09T06:29:36.219Z"
+    }
+  ],
+  "notifications": []
+}
