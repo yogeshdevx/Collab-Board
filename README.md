@@ -1,49 +1,69 @@
 # Collab Board
 
-Collab Board is a full-stack project management app inspired by tools like Trello and Asana. It helps teams create projects, manage task boards, assign work, discuss tasks, and receive realtime updates.
+Collab Board is a full-stack project management app for planning team work. It lets users create projects, organize task boards, assign work, and discuss tasks in one place.
 
-The app is built as one Node.js project. The backend, API, authentication, WebSocket server, and static frontend are served from the same app, so it does not need a separate frontend deployment.
+The app is inspired by tools like Trello and Asana, with a simple kanban-style board and realtime updates.
 
-## What You Can Do
+## Screenshots
 
-- Register and log in as a user
-- Create group projects
-- View project boards with task cards
-- Create, edit, assign, and organize tasks
-- Set task priority, status, due date, and description
-- Comment inside tasks for team communication
-- Receive realtime board updates and notifications with WebSockets
-- Run locally without setting up a database
+### Login Page
+
+![Collab Board login screen](assets/login-screen.png)
+
+### Project Board
+
+![Collab Board project board](assets/board-screen.png)
+
+## Features
+
+- User registration and login
+- Demo account for quick testing
+- Group project creation
+- Project board with task columns
+- Task cards with title, status, priority, due date, and assignee
+- Task comments for communication
+- Notifications for project activity
+- Realtime updates using WebSockets
+- Local JSON storage, so no database setup is needed
 
 ## Tech Stack
 
 - Node.js
-- Built-in HTTP server
+- HTML
+- CSS
+- JavaScript
 - WebSockets
-- Vanilla HTML, CSS, and JavaScript
 - JSON file storage
 
 ## Project Structure
 
 ```text
 .
-├── server.js
+├── assets
+│   ├── board-screen.png
+│   └── login-screen.png
+├── public
+│   ├── app.js
+│   ├── index.html
+│   └── styles.css
 ├── package.json
 ├── README.md
-└── public
-    ├── index.html
-    ├── app.js
-    └── styles.css
+└── server.js
 ```
 
-## Try It Locally
+## Run Locally
 
-First, make sure Node.js is installed on your computer.
+Make sure Node.js is installed on your computer.
 
-Clone the repository:
+Clone this repository:
 
 ```bash
 git clone YOUR_REPOSITORY_URL
+```
+
+Go into the project folder:
+
+```bash
 cd YOUR_REPOSITORY_FOLDER
 ```
 
@@ -53,7 +73,7 @@ Start the app:
 node server.js
 ```
 
-Open this URL in your browser:
+Open the app in your browser:
 
 ```text
 http://localhost:3000
@@ -61,49 +81,28 @@ http://localhost:3000
 
 ## Demo Login
 
-The app creates a demo user automatically the first time it runs.
+The app automatically creates a demo account the first time it runs.
 
 ```text
 Email: demo@example.com
 Password: demo123
 ```
 
-You can also register a new account from the login page.
+You can also create a new account from the register button on the login page.
 
-## Data Storage
+## Local Data
 
-The app stores local data in:
+When you run the app, it automatically creates this file:
 
 ```text
 data/db.json
 ```
 
-This file is created automatically when the app runs for the first time. No database setup is required for local testing.
+That file stores users, projects, boards, tasks, comments, and notifications for local testing.
 
-## Deploying
+## Notes
 
-This project can be deployed as a Node.js Web Service on platforms like Render.
-
-Recommended Render settings:
-
-```text
-Language: Node
-Build Command: npm install
-Start Command: node server.js
-```
-
-Add this environment variable:
-
-```text
-TOKEN_SECRET=your-long-random-secret
-```
-
-After deployment, the same live URL serves:
-
-- The frontend from `public`
-- The backend API from `/api`
-- Realtime updates from `/ws`
-
-## Important Note For Deployment
-
-This project uses JSON file storage, which is simple and good for demos. On many hosting platforms, local files can reset after redeploys. For production use, replace `data/db.json` with a real database such as PostgreSQL, MongoDB, or another persistent storage option.
+- No external database is required for local use.
+- No separate frontend setup is required.
+- The frontend is stored in the `public` folder.
+- The backend and frontend run together from `server.js`.
